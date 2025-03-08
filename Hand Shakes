@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner input=new Scanner(System.in);
+        int n = input.nextInt();
+        int handshakes=0;
+        int i;
+        if (n<=1){
+            System.out.println("No handshakes possible");
+        }
+        else{
+            for(i=1; i<n ;i++){
+                handshakes=handshakes+i;
+            }
+            System.out.println("Total handshakes: "+handshakes);
+        }
+    }
+}
