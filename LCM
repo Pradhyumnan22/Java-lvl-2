@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner in=new Scanner(System.in);
+        int n1=in.nextInt();
+        int n2=in.nextInt();
+        int lcm=1;
+        for (int i=1;n1*n2>=i;i++){
+            if(i%n1==0 && i%n2==0){
+                lcm=i;
+            }
+        }
+        System.out.println(lcm);
+    }
+}
