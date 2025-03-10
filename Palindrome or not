@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        int temp=n;
+        int i,ld;
+        int rev=0;
+        while(temp!=0){
+            ld=temp%10;
+            rev=rev*10+ld;
+            temp=temp/10;
+        }
+        if(n==rev){
+            System.out.println("Palindrome");
+        }
+        else{
+            System.out.println("Not Pal");
+        }
+    }
+}
