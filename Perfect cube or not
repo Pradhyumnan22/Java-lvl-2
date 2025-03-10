@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        int cube = (int) Math.cbrt(n);
+        if(cube*cube*cube==n){
+            System.out.println("Perfect Cube");
+        }
+        else{
+            System.out.println("Not Perfect");
+        }
+    }
+}
