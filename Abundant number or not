@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int num=in.nextInt();
+        int sumDivisors= 0;
+        for (int i = 1; i < num; i++) 
+        {
+            if (num % i == 0) 
+            {
+                sumDivisors=sumDivisors+i;
+            }
+        }
+        if(sumDivisors > num){
+            System.out.println("abundant number.");
+        } 
+        else{
+            System.out.println("not an abundant number.");
+        }
+    }
+}
